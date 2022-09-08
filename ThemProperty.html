@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .box {
+            margin: 0 auto;
+            border: 2px solid;
+            /* property 1 */
+            border-radius: 10px;
+            /* property 2 */
+            box-shadow: 1px 10px 20px #999;
+            /* property 3*/
+            animation: grow ease-in 0.3s;
+            /* property 5 */
+            float: initial;
+
+        }
+
+        @keyframes grow {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+        td,
+        th {
+            border: 1px solid blue;
+            padding: 5px;
+            text-align: center;
+            color: yellowgreen;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        tr:hover {
+            background-color: red;
+            /* properety 4 */
+            cursor: pointer;
+        }
+
+        #USD {
+            background-color: #ff0000;
+        }
+    </style>s
+</head>
+
+<body>
+    <table class="box">
+        <caption><b>Tỷ giá ngoại tệ</b></caption>
+        <tr>
+            <th>Loại ngoại tệ</th>
+            <th>Mua vào</th>
+            <th>Bán ra</th>
+            <th>Chuyển khoản</th>
+        </tr>
+        <tr style="background-color: green;">
+            <td>AUD</td>
+            <td>15.400</td>
+            <td>15.550</td>
+            <td>15.466</td>
+        </tr>
+        <tr>
+            <td>CND</td>
+            <td>18.300</td>
+            <td>18.450</td>
+            <td>18.377</td>
+        </tr>
+        <tr style="background-color: green;">
+            <td>JPD</td>
+            <td>190</td>
+            <td>220</td>
+            <td>207</td>
+        </tr>
+        <tr id="USD">
+            <td>HKD</td>
+            <td>1190</td>
+            <td>1220</td>
+            <td>1207</td>
+        </tr>
+        <tr style="background-color: green;">
+            <td id="USD">USD</td>
+            <td>23.400</td>
+            <td>23.550</td>
+            <td>23.466</td>
+        </tr>
+    </table>
+</body>
+
+</html>
